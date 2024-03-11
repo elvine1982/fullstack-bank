@@ -33,7 +33,7 @@ pipeline {
         
         stage('SONARQUBE ANALYSIS') {
             steps {
-                withSonarQubeEnv('sonar') {
+                withSonarQubeEnv('sonar-scanner') {
                     withSonarQubeEnv(credentialsId: 'todosonar') {// some block
 
             }
